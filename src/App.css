@@ -1,0 +1,175 @@
+.sider{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+width: 15%;
+  height: 100%;
+  background-color: #194994;
+  position: fixed;
+   border-top-right-radius: 25px;
+   padding-top: 20px;
+   color: white;
+}
+.side{
+  width: 18%;
+}
+
+.dashboard{
+  width: 60%;
+  display: flex;
+  justify-content:center !important;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 40px;
+ 
+  margin-top: 10px;
+}
+
+.input input{
+  width: 280px;
+  height: 35px;
+  border-radius: 25px;
+  border: 1px solid gray;
+  background-color: #e3e3e3;
+  padding: 10px !important;
+}
+
+.filters{
+  display: flex !important;
+  justify-content:flex-start !important;
+  align-items: center !important;
+  flex-direction: row;
+text-align: start !important;
+gap: 25px;
+margin-top: 40px;
+margin-bottom: 30px;
+}
+
+.filters label{
+  font-size: 17px;
+  font-weight: 500;
+  text-align: start !important;
+}
+
+.filters select{
+  width: 130px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 968px) {
+  .side {
+      display: none;
+  }
+  .dashboard{
+    width: 80%;
+    margin-left: 40px;
+
+  }
+  .input{
+    flex-direction: column;
+  
+  }
+ 
+  .filters{
+    flex-direction: column;
+  }
+}
+
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.details-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.details-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.details-info strong {
+  color: #222;
+}
+
+
+.status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status.active {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.status.inactive {
+  color: #fff;
+  background-color: #ffc107;
+}
+
+.status.blocked {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.status.suspended {
+  color: #fff;
+  background-color: #fd7e14;
+}
+
+
+.home-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+/* For "User not found" message */
+.not-found {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
