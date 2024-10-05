@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/Logo.png";
-import qms from "../assets/qms.png";
+import qms from "../assets/QMS.png";
 import horizontal from "../assets/three-horizontal.png";
 import teachers from "../assets/teachers.png";
 import dept from "../assets/dept.png";
